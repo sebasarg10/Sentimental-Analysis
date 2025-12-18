@@ -1,41 +1,5 @@
 # Technical Code Walkthrough
 
-**Tool:** Multi-Bank Earnings Call Sentiment Analysis  
-**Client:** Scotiabank - Corporate Strategy and IT Teams  
-**Prepared by:** MGSC 661 Consulting Team  
-**Date:** December 2025  
-**Purpose:** Detailed technical documentation for code understanding, maintenance, and customization
-
-## Document Purpose
-
-This document provides a comprehensive walkthrough of the sentiment analysis tool's code structure, logic, and implementation. It is intended for:
-
-- **Data Scientists** who will maintain and enhance the tool
-- **IT Support Staff** who will troubleshoot technical issues
-- **Strategy Analysts** who want to understand the methodology at a deeper level
-- **Future Development Teams** who may extend functionality
-
-## Code Architecture Overview
-
-The tool is structured as a linear Jupyter Notebook with 9 major steps:
-
-```
-Step 1: Configuration        → Define banks and URLs
-Step 2: Import Libraries     → Load Python dependencies
-Step 3-5: Load Resources     → Dictionary, stopwords, FinBERT model
-Step 6-7: Define Functions   → Processing and analysis logic
-Step 8: Process All Banks    → Main execution loop
-Step 9: Output Results       → Rankings, visualization, examples
-```
-
-**Design Principles:**
-
-1. **Sequential Processing:** Each step builds on previous steps
-2. **Modular Functions:** Reusable functions for common operations
-3. **Minimal Output:** Silent processing with final summary results
-4. **Data Preservation:** All intermediate results stored for debugging
-5. **Error Tolerance:** Continues processing even if individual sentences fail
-
 ## Detailed Step-by-Step Walkthrough
 
 ### Step 1: Bank Configuration
